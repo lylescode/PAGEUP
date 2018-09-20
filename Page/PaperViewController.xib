@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaperViewController">
+            <connections>
+                <outlet property="dimmedView" destination="rKd-5I-HqA" id="Bm6-0D-EDQ"/>
+                <outlet property="indicatorView" destination="I5Q-wR-Med" id="jEl-i4-cuw"/>
+                <outlet property="shareButton" destination="lMw-JI-d8Q" id="14j-xs-lLC"/>
+                <outlet property="toolView" destination="2kb-6P-6sd" id="yD3-vp-MO6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2kb-6P-6sd">
+                    <rect key="frame" x="0.0" y="536" width="600" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMw-JI-d8Q">
+                            <rect key="frame" x="275" y="7" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="EIt-DZ-LnQ"/>
+                                <constraint firstAttribute="width" constant="50" id="TSI-xM-UaO"/>
+                                <constraint firstAttribute="height" constant="50" id="YlJ-ZY-rIo"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="cW8-QM-HYg"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="yPe-1R-nGh"/>
+                                <constraint firstAttribute="height" constant="50" id="zL4-EJ-6tR"/>
+                            </constraints>
+                            <state key="normal" image="EditorShareButton.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="TSI-xM-UaO"/>
+                                    <exclude reference="YlJ-ZY-rIo"/>
+                                    <exclude reference="cW8-QM-HYg"/>
+                                    <exclude reference="yPe-1R-nGh"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=compact">
+                                <mask key="constraints">
+                                    <exclude reference="EIt-DZ-LnQ"/>
+                                    <include reference="TSI-xM-UaO"/>
+                                    <include reference="YlJ-ZY-rIo"/>
+                                    <include reference="cW8-QM-HYg"/>
+                                    <include reference="yPe-1R-nGh"/>
+                                    <exclude reference="zL4-EJ-6tR"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="shareButtonAction:" destination="-1" eventType="touchUpInside" id="PLw-mQ-D4r"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="0js-uw-qUs"/>
+                        <constraint firstAttribute="height" constant="64" id="CWI-O9-2LI"/>
+                        <constraint firstAttribute="centerY" secondItem="lMw-JI-d8Q" secondAttribute="centerY" id="ILb-Df-eer"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="gCQ-JJ-vdl">
+                            <variation key="heightClass=compact" constant="1"/>
+                        </constraint>
+                        <constraint firstAttribute="centerX" secondItem="lMw-JI-d8Q" secondAttribute="centerX" id="n8s-SM-yxZ"/>
+                        <constraint firstAttribute="centerX" secondItem="lMw-JI-d8Q" secondAttribute="centerX" id="oGS-z2-2UN"/>
+                        <constraint firstAttribute="centerY" secondItem="lMw-JI-d8Q" secondAttribute="centerY" id="vCT-Rt-fF5"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="0js-uw-qUs"/>
+                            <exclude reference="ILb-Df-eer"/>
+                            <exclude reference="oGS-z2-2UN"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact">
+                        <mask key="constraints">
+                            <include reference="0js-uw-qUs"/>
+                            <exclude reference="CWI-O9-2LI"/>
+                            <exclude reference="gCQ-JJ-vdl"/>
+                            <include reference="ILb-Df-eer"/>
+                            <exclude reference="n8s-SM-yxZ"/>
+                            <include reference="oGS-z2-2UN"/>
+                            <exclude reference="vCT-Rt-fF5"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rKd-5I-HqA">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.34999999999999998" colorSpace="calibratedWhite"/>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="I5Q-wR-Med">
+                    <rect key="frame" x="281" y="282" width="37" height="37"/>
+                </activityIndicatorView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="I5Q-wR-Med" secondAttribute="centerX" id="40A-pV-D7V"/>
+                <constraint firstAttribute="bottom" secondItem="2kb-6P-6sd" secondAttribute="bottom" id="BFr-Ob-QiB"/>
+                <constraint firstAttribute="centerY" secondItem="I5Q-wR-Med" secondAttribute="centerY" id="Cho-A9-Nce"/>
+                <constraint firstAttribute="trailing" secondItem="2kb-6P-6sd" secondAttribute="trailing" id="HWk-ZY-Bwr"/>
+                <constraint firstItem="2kb-6P-6sd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="M0R-Ze-hbN"/>
+                <constraint firstAttribute="trailing" secondItem="rKd-5I-HqA" secondAttribute="trailing" id="Nvq-W9-Zjy"/>
+                <constraint firstItem="rKd-5I-HqA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cfK-gc-pr6"/>
+                <constraint firstAttribute="bottom" secondItem="rKd-5I-HqA" secondAttribute="bottom" id="gNo-gh-rWH"/>
+                <constraint firstItem="2kb-6P-6sd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hsm-je-bDe"/>
+                <constraint firstAttribute="bottom" secondItem="2kb-6P-6sd" secondAttribute="bottom" id="lcM-bu-quF"/>
+                <constraint firstAttribute="trailing" secondItem="2kb-6P-6sd" secondAttribute="trailing" id="ucU-o7-tE0"/>
+                <constraint firstItem="rKd-5I-HqA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="y7B-qS-a5P"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="HWk-ZY-Bwr"/>
+                    <exclude reference="M0R-Ze-hbN"/>
+                    <exclude reference="lcM-bu-quF"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact">
+                <mask key="constraints">
+                    <exclude reference="BFr-Ob-QiB"/>
+                    <include reference="HWk-ZY-Bwr"/>
+                    <include reference="M0R-Ze-hbN"/>
+                    <exclude reference="hsm-je-bDe"/>
+                    <include reference="lcM-bu-quF"/>
+                    <exclude reference="ucU-o7-tE0"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="EditorShareButton.png" width="50" height="50"/>
+    </resources>
+</document>

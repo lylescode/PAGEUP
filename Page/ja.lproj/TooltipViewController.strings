@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "Create a page"; ObjectID = "8wz-Lr-tXZ"; */
+"8wz-Lr-tXZ.text" = "ページ作成";
+
+/* Class = "UILabel"; text = "Tutorial & About"; ObjectID = "Dp8-BV-y2c"; */
+"Dp8-BV-y2c.text" = "チュートリアル&ご紹介";
+
+/* Class = "UILabel"; text = "Layout Style"; ObjectID = "aW6-Fk-YTN"; */
+"aW6-Fk-YTN.text" = "レイアウト整列";
+
+/* Class = "UILabel"; text = "Tap to edit and \ndrag the text"; ObjectID = "bWy-ME-Akb"; */
+"bWy-ME-Akb.text" = "タップして編集、\nテキストを移す";
+
+/* Class = "UILabel"; text = "Swipe down to go back"; ObjectID = "cbC-DJ-Co1"; */
+"cbC-DJ-Co1.text" = "下に引っ張って以前画面に戻る";
+
+/* Class = "UILabel"; text = "Choose a layouts"; ObjectID = "dtX-de-X04"; */
+"dtX-de-X04.text" = "レイアウト選択";
+
+/* Class = "UILabel"; text = "Pick your favorite photos (up to four)"; ObjectID = "gaa-jC-OG4"; */
+"gaa-jC-OG4.text" = "画像選択(最大4枚)";
+
+/* Class = "UILabel"; text = "Select Album"; ObjectID = "lzX-6i-V6A"; */
+"lzX-6i-V6A.text" = "アルバム変更";

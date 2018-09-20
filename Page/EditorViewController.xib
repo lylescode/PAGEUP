@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditorViewController">
+            <connections>
+                <outlet property="editButton" destination="Gx3-qn-ke4" id="fc6-Uh-iNz"/>
+                <outlet property="editorToolBar" destination="I7P-cB-7hg" id="qXQ-o8-Z7t"/>
+                <outlet property="geniusButton" destination="1Om-gb-32Q" id="oMA-Qf-lxt"/>
+                <outlet property="shareButton" destination="q6F-A9-Ub5" id="7qc-05-gZ5"/>
+                <outlet property="templateScrollView" destination="7QY-Bs-vBC" id="PJ9-4V-FGR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7QY-Bs-vBC">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="485"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="dYf-K2-mnE"/>
+                    </connections>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I7P-cB-7hg">
+                    <rect key="frame" x="0.0" y="485" width="600" height="115"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EditorToolBar" translatesAutoresizingMaskIntoConstraints="NO" id="4Ln-pt-RYq">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="69"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Om-gb-32Q">
+                            <rect key="frame" x="173" y="14" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="I5t-b1-iiT"/>
+                                <constraint firstAttribute="height" constant="44" id="Yhf-zp-kIO"/>
+                            </constraints>
+                            <state key="normal" image="EditorToolGeniusButton"/>
+                            <connections>
+                                <action selector="editorToolBarAction:" destination="-1" eventType="touchUpInside" id="tUF-6b-Z1i"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gx3-qn-ke4">
+                            <rect key="frame" x="278" y="14" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="bZd-il-acp"/>
+                                <constraint firstAttribute="width" constant="44" id="pOY-5q-tdk"/>
+                            </constraints>
+                            <state key="normal" image="EditorToolEditButton"/>
+                            <connections>
+                                <action selector="editorToolBarAction:" destination="-1" eventType="touchUpInside" id="gy7-8i-FbS"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6F-A9-Ub5">
+                            <rect key="frame" x="383" y="14" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="ZKc-9t-SSn"/>
+                                <constraint firstAttribute="height" constant="44" id="woQ-0d-iUm"/>
+                            </constraints>
+                            <state key="normal" image="EditorToolShareButton"/>
+                            <connections>
+                                <action selector="editorToolBarAction:" destination="-1" eventType="touchUpInside" id="1cS-Zb-HhQ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="4Ln-pt-RYq" firstAttribute="top" secondItem="I7P-cB-7hg" secondAttribute="top" id="4Wk-Gz-vG7"/>
+                        <constraint firstItem="1Om-gb-32Q" firstAttribute="centerX" secondItem="I7P-cB-7hg" secondAttribute="centerX" constant="-105" id="7x8-rI-Ipo"/>
+                        <constraint firstItem="Gx3-qn-ke4" firstAttribute="centerY" secondItem="I7P-cB-7hg" secondAttribute="centerY" constant="-21.5" id="EbA-i0-wZn"/>
+                        <constraint firstItem="4Ln-pt-RYq" firstAttribute="leading" secondItem="I7P-cB-7hg" secondAttribute="leading" id="GfO-Pq-1Op"/>
+                        <constraint firstItem="1Om-gb-32Q" firstAttribute="centerY" secondItem="I7P-cB-7hg" secondAttribute="centerY" constant="-21.5" id="TQV-OS-QnR"/>
+                        <constraint firstAttribute="trailing" secondItem="4Ln-pt-RYq" secondAttribute="trailing" id="Ufz-hL-qKa"/>
+                        <constraint firstAttribute="bottom" secondItem="4Ln-pt-RYq" secondAttribute="bottom" constant="46" id="gBc-BW-mup"/>
+                        <constraint firstItem="Gx3-qn-ke4" firstAttribute="centerX" secondItem="I7P-cB-7hg" secondAttribute="centerX" id="j6D-Mq-Kq0"/>
+                        <constraint firstItem="q6F-A9-Ub5" firstAttribute="centerY" secondItem="I7P-cB-7hg" secondAttribute="centerY" constant="-21.5" id="khr-JK-2dM"/>
+                        <constraint firstItem="q6F-A9-Ub5" firstAttribute="centerX" secondItem="I7P-cB-7hg" secondAttribute="centerX" constant="105" id="lLE-yu-Nwo"/>
+                        <constraint firstAttribute="height" constant="115" id="mdk-Za-gGx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.20392158630000001" green="0.20392158630000001" blue="0.20392158630000001" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="7QY-Bs-vBC" secondAttribute="trailing" constant="64" id="CGF-zJ-rd6"/>
+                <constraint firstAttribute="bottom" secondItem="7QY-Bs-vBC" secondAttribute="bottom" constant="10" id="LIG-ma-Okf">
+                    <variation key="heightClass=compact" constant="54"/>
+                </constraint>
+                <constraint firstItem="I7P-cB-7hg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QHL-Hf-iAJ"/>
+                <constraint firstAttribute="bottom" secondItem="I7P-cB-7hg" secondAttribute="bottom" id="adc-bB-hJe"/>
+                <constraint firstAttribute="trailing" secondItem="I7P-cB-7hg" secondAttribute="trailing" id="cNQ-Yj-qm3"/>
+                <constraint firstAttribute="bottom" secondItem="7QY-Bs-vBC" secondAttribute="bottom" constant="115" id="mq5-I6-FXS"/>
+                <constraint firstAttribute="trailing" secondItem="7QY-Bs-vBC" secondAttribute="trailing" id="pZo-Pk-SXQ"/>
+                <constraint firstItem="7QY-Bs-vBC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="rBS-lS-eZc"/>
+                <constraint firstItem="7QY-Bs-vBC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sCv-jo-z3F"/>
+                <constraint firstItem="7QY-Bs-vBC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uiJ-eC-LTw"/>
+                <constraint firstItem="7QY-Bs-vBC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="64" id="yPp-di-2IW"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="CGF-zJ-rd6"/>
+                    <exclude reference="LIG-ma-Okf"/>
+                    <exclude reference="rBS-lS-eZc"/>
+                    <exclude reference="yPp-di-2IW"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact">
+                <mask key="constraints">
+                    <include reference="CGF-zJ-rd6"/>
+                    <include reference="LIG-ma-Okf"/>
+                    <exclude reference="mq5-I6-FXS"/>
+                    <exclude reference="pZo-Pk-SXQ"/>
+                    <include reference="rBS-lS-eZc"/>
+                    <exclude reference="sCv-jo-z3F"/>
+                    <exclude reference="uiJ-eC-LTw"/>
+                    <include reference="yPp-di-2IW"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="EditorToolBar" width="375" height="69"/>
+        <image name="EditorToolEditButton" width="44" height="44"/>
+        <image name="EditorToolGeniusButton" width="44" height="44"/>
+        <image name="EditorToolShareButton" width="44" height="44"/>
+    </resources>
+</document>

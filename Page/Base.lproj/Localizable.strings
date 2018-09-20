@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  Page
+
+  Created by CMR on 8/10/15.
+  Copyright (c) 2015 Page. All rights reserved.
+*/
+
+"All Photos"        = "All Photos";
+
+"TemplateSortAll"           = "All";
+"TemplateSortLandscape"     = "Landscape";
+"TemplateSortSquare"        = "Square";
+"TemplateSortPortrait"      = "Portrait";
+
+"Share Photo"       = "Share Photo";
+"Share Video"       = "Share Video";
+"Share PDF"         = "Share PDF";
+
+"ABOUT"             = "ABOUT";
+"TUTORIAL TIPS"     = "TUTORIAL TIPS";
+
+"Gallery"           = "Gallery";
+"Select Photos"     = "Photos";
+"Select Layout"     = "Layouts";
+"Edit Page"         = "Editing";
+
+"About Description" = "Tell your own stories with stunning photos, spontaneously designed with PAGE UP, exclusively by you!";
+
+"Gallery Description"           = "Check out your own creation on the Gallery page - create a new page, copy, delete and share your pages with simple and easy-to-use interface.";
+
+"Select Photos Description"     = "Pick your favorite photos (up to four), then PAGE UP will automatically generate sleek layouts, custom-designed and designed based on the number of photos selected by you.";
+
+"Select Layout Description"     = "Choose your layouts in different orientations - Landscape, Square or Portrait.";
+
+"Edit Page Description"         = "Simple and quick editing for your text and photos - font, size, color, brightness and more.";
+
+"WATCH THE VIDEO"   = "WATCH THE VIDEO";
+
+
+"RATE PAGE UP"          = "RATE PAGE UP";
+"RECOMMEND PAGE UP"     = "RECOMMEND PAGE UP";
+"FEEDBACK"              = "FEEDBACK";
+
+
+"Delete Message"    = "Delete Page on this device?";
+"Yes"               = "Yes";
+"No"                = "No";

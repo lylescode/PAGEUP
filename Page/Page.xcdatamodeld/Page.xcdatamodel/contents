@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D136" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Project" representedClassName="Project" syncable="YES">
+        <attribute name="creationDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="modificationDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="photoAssetDictionaryData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="previewImageName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="previewImageSize" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="projectDictionaryData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="templateDictionaryData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="templateTextDictionaryData" optional="YES" attributeType="Binary" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Project" positionX="-63" positionY="-18" width="128" height="165"/>
+    </elements>
+</model>

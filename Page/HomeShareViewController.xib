@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeShareViewController">
+            <connections>
+                <outlet property="bottomBar" destination="Pl1-s4-pQW" id="Uxf-8z-yKY"/>
+                <outlet property="dimmedView" destination="teb-Ez-tfm" id="478-Y1-ngg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="teb-Ez-tfm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pl1-s4-pQW">
+                    <rect key="frame" x="0.0" y="506" width="375" height="161"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShareBar" translatesAutoresizingMaskIntoConstraints="NO" id="05q-VU-6Lj">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="161"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Share_Layout" translatesAutoresizingMaskIntoConstraints="NO" id="iDm-xr-Jmx">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="161"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="iDm-xr-Jmx" firstAttribute="top" secondItem="Pl1-s4-pQW" secondAttribute="top" id="AN9-EB-u2X"/>
+                        <constraint firstItem="05q-VU-6Lj" firstAttribute="leading" secondItem="Pl1-s4-pQW" secondAttribute="leading" id="Hh9-Qd-tzP"/>
+                        <constraint firstAttribute="bottom" secondItem="iDm-xr-Jmx" secondAttribute="bottom" id="Mka-4I-Mt2"/>
+                        <constraint firstAttribute="trailing" secondItem="iDm-xr-Jmx" secondAttribute="trailing" id="Xmd-PQ-xtl"/>
+                        <constraint firstAttribute="bottom" secondItem="05q-VU-6Lj" secondAttribute="bottom" id="Yf8-4o-4EH"/>
+                        <constraint firstItem="05q-VU-6Lj" firstAttribute="top" secondItem="Pl1-s4-pQW" secondAttribute="top" id="jWd-oa-AhO"/>
+                        <constraint firstAttribute="height" constant="161" id="kM2-9i-LDG"/>
+                        <constraint firstAttribute="trailing" secondItem="05q-VU-6Lj" secondAttribute="trailing" id="nmF-uv-C7f"/>
+                        <constraint firstItem="iDm-xr-Jmx" firstAttribute="leading" secondItem="Pl1-s4-pQW" secondAttribute="leading" id="ydD-vq-8bW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="teb-Ez-tfm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7C9-WD-5d3"/>
+                <constraint firstItem="teb-Ez-tfm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DgB-j6-tAK"/>
+                <constraint firstAttribute="bottom" secondItem="Pl1-s4-pQW" secondAttribute="bottom" id="UQk-RS-4nl"/>
+                <constraint firstItem="Pl1-s4-pQW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="feI-SW-2xf"/>
+                <constraint firstAttribute="bottom" secondItem="teb-Ez-tfm" secondAttribute="bottom" id="ljz-Cn-udD"/>
+                <constraint firstAttribute="trailing" secondItem="teb-Ez-tfm" secondAttribute="trailing" id="nc2-94-8tU"/>
+                <constraint firstAttribute="trailing" secondItem="Pl1-s4-pQW" secondAttribute="trailing" id="t0L-Pd-g6c"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="ShareBar" width="375" height="161"/>
+        <image name="Share_Layout" width="375" height="161"/>
+    </resources>
+</document>

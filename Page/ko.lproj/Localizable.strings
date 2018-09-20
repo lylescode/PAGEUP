@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  Page
+
+  Created by CMR on 8/10/15.
+  Copyright (c) 2015 Page. All rights reserved.
+*/
+
+"All Photos"        = "모든 사진";
+
+"TemplateSortAll"           = "전체 보기";
+"TemplateSortLandscape"     = "가로형";
+"TemplateSortSquare"        = "정방형";
+"TemplateSortPortrait"      = "세로형";
+
+"Share Photo"       = "사진 공유하기";
+"Share Video"       = "비디오 공유하기";
+"Share PDF"         = "PDF 공유하기";
+
+"ABOUT"             = "ABOUT";
+"TUTORIAL TIPS"     = "튜토리얼 팁";
+
+"Gallery"           = "갤러리";
+"Select Photos"     = "사진 선택하기";
+"Select Layout"     = "레이아웃 선택하기";
+"Edit Page"         = "편집하기";
+
+"About Description" = "쉽고 재미있게 디자인한 당신의 사진과 이야기를 친구들과 다양한 방법으로 공유해 보세요.";
+
+"Gallery Description"           = "제작한 페이지를 한눈에 볼수있는 갤러리 화면 입니다. 손쉽게 신규 생성, 복제, 삭제, 공유를 할 수 있습니다.";
+
+"Select Photos Description"     = "원하는 사진을 1-4개까지 선택하세요. 선택한 사진 갯수에 따라 맞춤 레이아웃을 제공합니다.";
+
+"Select Layout Description"     = "원하는 디자인 레이아웃을 선택하세요. 가로형, 세로형, 정사각형 사이즈별 선택도 가능합니다.";
+
+"Edit Page Description"         = "원하는 서체, 컬러, 사진 밝기, 사진교체 등을 쉽고 빠르게 편집이 가능합니다.";
+
+"WATCH THE VIDEO"   = "동영상 보기";
+
+
+"RATE PAGE UP"          = "PAGE UP 평가하기";
+"RECOMMEND PAGE UP"     = "PAGE UP 추천하기";
+"FEEDBACK"              = "PAGE UP 의견보내기";
+
+
+"Delete Message"    = "페이지를 삭제하시겠습니까?";
+"Yes"               = "네";
+"No"                = "아니오";

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WorkRootViewController">
+            <connections>
+                <outlet property="bottomCancelButton" destination="MEh-Iq-Wl0" id="aPu-yt-rhw"/>
+                <outlet property="bottomConfirmButton" destination="cDb-6e-wDp" id="0rU-Yz-Pzj"/>
+                <outlet property="bottomEditorEditButton" destination="yHy-za-935" id="Z1I-Kz-09h"/>
+                <outlet property="bottomEditorGeniusButton" destination="p6s-RS-b8V" id="KGh-ux-6E3"/>
+                <outlet property="bottomEditorMenuView" destination="2H5-mY-ZCc" id="I2J-2d-KDQ"/>
+                <outlet property="bottomEditorShareButton" destination="geF-Xx-Yac" id="B3J-sg-wyw"/>
+                <outlet property="bottomMenuView" destination="39K-mg-zEO" id="fK6-LD-RoK"/>
+                <outlet property="shopButton" destination="9jr-8P-7jM" id="JlZ-QM-KV0"/>
+                <outlet property="view" destination="iN0-l3-epB" id="bhf-MX-hMl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jr-8P-7jM">
+                    <rect key="frame" x="476" y="7" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="3Dm-hg-AC3"/>
+                        <constraint firstAttribute="height" constant="44" id="hzN-Wz-Prb"/>
+                    </constraints>
+                    <state key="normal" image="WorkRootShopButton">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="shopButtonAction:" destination="-1" eventType="touchUpInside" id="dR7-8t-d6f"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WorkBackground" translatesAutoresizingMaskIntoConstraints="NO" id="hQU-rl-CbV">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2H5-mY-ZCc">
+                    <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgW-d4-Bmi">
+                            <rect key="frame" x="0.0" y="0.0" width="200" height="44"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1id-RC-arO">
+                            <rect key="frame" x="400" y="0.0" width="200" height="44"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jWL-Fr-91c">
+                            <rect key="frame" x="200" y="0.0" width="200" height="44"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6s-RS-b8V">
+                            <rect key="frame" x="78" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="13S-Wn-2By"/>
+                                <constraint firstAttribute="width" constant="44" id="z4s-iz-4p2"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="EditorGeniusButton"/>
+                            <connections>
+                                <action selector="bottomEditorMenuButtonAction:" destination="-1" eventType="touchUpInside" id="PCS-ka-Bps"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHy-za-935">
+                            <rect key="frame" x="278" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="rzr-E1-6lu"/>
+                                <constraint firstAttribute="height" constant="44" id="uv2-Wi-x3U"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="EditorEditButton"/>
+                            <connections>
+                                <action selector="bottomEditorMenuButtonAction:" destination="-1" eventType="touchUpInside" id="fvY-Gt-F3q"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geF-Xx-Yac">
+                            <rect key="frame" x="478" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="I0Q-sz-dMB"/>
+                                <constraint firstAttribute="height" constant="44" id="bxG-gl-GNI"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="HomeShareButton"/>
+                            <connections>
+                                <action selector="bottomEditorMenuButtonAction:" destination="-1" eventType="touchUpInside" id="TaL-fK-VxN"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="mgW-d4-Bmi" firstAttribute="width" secondItem="2H5-mY-ZCc" secondAttribute="width" multiplier="1:3" id="2L9-en-CrB"/>
+                        <constraint firstItem="yHy-za-935" firstAttribute="centerY" secondItem="jWL-Fr-91c" secondAttribute="centerY" id="3jj-4t-IWK"/>
+                        <constraint firstItem="p6s-RS-b8V" firstAttribute="centerX" secondItem="mgW-d4-Bmi" secondAttribute="centerX" id="6pp-jo-EvF"/>
+                        <constraint firstItem="jWL-Fr-91c" firstAttribute="top" secondItem="2H5-mY-ZCc" secondAttribute="top" id="73i-UM-CAZ"/>
+                        <constraint firstAttribute="width" secondItem="1id-RC-arO" secondAttribute="width" multiplier="3:1" id="C7U-7L-ihf"/>
+                        <constraint firstAttribute="bottom" secondItem="1id-RC-arO" secondAttribute="bottom" id="EIt-sL-ikP"/>
+                        <constraint firstItem="p6s-RS-b8V" firstAttribute="centerY" secondItem="mgW-d4-Bmi" secondAttribute="centerY" id="EZE-6l-H1L"/>
+                        <constraint firstAttribute="bottom" secondItem="mgW-d4-Bmi" secondAttribute="bottom" id="HJ3-Ub-MUE"/>
+                        <constraint firstItem="1id-RC-arO" firstAttribute="top" secondItem="2H5-mY-ZCc" secondAttribute="top" id="LOU-5Y-iYc"/>
+                        <constraint firstItem="jWL-Fr-91c" firstAttribute="leading" secondItem="mgW-d4-Bmi" secondAttribute="trailing" id="N7G-9h-WHe"/>
+                        <constraint firstItem="geF-Xx-Yac" firstAttribute="centerX" secondItem="1id-RC-arO" secondAttribute="centerX" id="ZG3-8u-NHW"/>
+                        <constraint firstAttribute="bottom" secondItem="jWL-Fr-91c" secondAttribute="bottom" id="cBv-mH-s6t"/>
+                        <constraint firstItem="mgW-d4-Bmi" firstAttribute="top" secondItem="2H5-mY-ZCc" secondAttribute="top" id="fj3-M8-sau"/>
+                        <constraint firstItem="yHy-za-935" firstAttribute="centerX" secondItem="jWL-Fr-91c" secondAttribute="centerX" id="k9j-ZE-jic"/>
+                        <constraint firstAttribute="height" constant="44" id="kyV-ma-V6O"/>
+                        <constraint firstItem="geF-Xx-Yac" firstAttribute="centerY" secondItem="1id-RC-arO" secondAttribute="centerY" id="sgn-zl-hwE"/>
+                        <constraint firstAttribute="trailing" secondItem="1id-RC-arO" secondAttribute="trailing" id="tt9-bq-De9"/>
+                        <constraint firstItem="mgW-d4-Bmi" firstAttribute="leading" secondItem="2H5-mY-ZCc" secondAttribute="leading" id="vfY-fS-tt7"/>
+                        <constraint firstItem="1id-RC-arO" firstAttribute="leading" secondItem="jWL-Fr-91c" secondAttribute="trailing" id="zm9-cc-di7"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="39K-mg-zEO">
+                    <rect key="frame" x="0.0" y="554" width="600" height="46"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CommonBottomBarWhite" translatesAutoresizingMaskIntoConstraints="NO" id="BW7-6e-NGY">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="46"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q8G-fW-4lC">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iag-Xw-S0G">
+                            <rect key="frame" x="300" y="0.0" width="300" height="44"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEh-Iq-Wl0">
+                            <rect key="frame" x="128" y="0.0" width="44" height="44"/>
+                            <state key="normal" image="EditorWhiteBarCancelButton">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="bottomMenuButtonAction:" destination="-1" eventType="touchUpInside" id="kbF-Z2-12h"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDb-6e-wDp">
+                            <rect key="frame" x="428" y="0.0" width="44" height="44"/>
+                            <state key="normal" image="EditorWhiteBarDoneButton">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="bottomMenuButtonAction:" destination="-1" eventType="touchUpInside" id="zCo-ja-K0O"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Iag-Xw-S0G" firstAttribute="top" secondItem="39K-mg-zEO" secondAttribute="top" id="0uQ-kV-9mx"/>
+                        <constraint firstAttribute="height" constant="46" id="6st-RP-ddd"/>
+                        <constraint firstItem="q8G-fW-4lC" firstAttribute="width" secondItem="39K-mg-zEO" secondAttribute="width" multiplier="1:2" id="KRY-aW-01Q"/>
+                        <constraint firstItem="BW7-6e-NGY" firstAttribute="top" secondItem="39K-mg-zEO" secondAttribute="top" id="LdU-po-ZiS"/>
+                        <constraint firstItem="cDb-6e-wDp" firstAttribute="centerY" secondItem="Iag-Xw-S0G" secondAttribute="centerY" id="MEH-Kk-hic"/>
+                        <constraint firstItem="MEh-Iq-Wl0" firstAttribute="centerX" secondItem="q8G-fW-4lC" secondAttribute="centerX" id="RQQ-vQ-BcZ"/>
+                        <constraint firstAttribute="trailing" secondItem="BW7-6e-NGY" secondAttribute="trailing" id="UoW-v1-VBV"/>
+                        <constraint firstItem="q8G-fW-4lC" firstAttribute="top" secondItem="39K-mg-zEO" secondAttribute="top" id="Uqi-wt-wVD"/>
+                        <constraint firstItem="Iag-Xw-S0G" firstAttribute="height" secondItem="39K-mg-zEO" secondAttribute="height" constant="-2" id="W9n-Oa-oHk"/>
+                        <constraint firstItem="BW7-6e-NGY" firstAttribute="leading" secondItem="39K-mg-zEO" secondAttribute="leading" id="Xb2-7u-1bQ"/>
+                        <constraint firstAttribute="bottom" secondItem="BW7-6e-NGY" secondAttribute="bottom" id="agf-fa-60I"/>
+                        <constraint firstItem="MEh-Iq-Wl0" firstAttribute="centerY" secondItem="q8G-fW-4lC" secondAttribute="centerY" id="gkL-LB-34B"/>
+                        <constraint firstItem="q8G-fW-4lC" firstAttribute="height" secondItem="39K-mg-zEO" secondAttribute="height" constant="-2" id="lzz-j1-uvP"/>
+                        <constraint firstItem="Iag-Xw-S0G" firstAttribute="width" secondItem="39K-mg-zEO" secondAttribute="width" multiplier="1:2" id="oNG-tW-WQ0"/>
+                        <constraint firstItem="cDb-6e-wDp" firstAttribute="centerX" secondItem="Iag-Xw-S0G" secondAttribute="centerX" id="tj3-Z3-K2N"/>
+                        <constraint firstItem="q8G-fW-4lC" firstAttribute="leading" secondItem="39K-mg-zEO" secondAttribute="leading" id="wLn-Jz-rdu"/>
+                        <constraint firstAttribute="trailing" secondItem="Iag-Xw-S0G" secondAttribute="trailing" id="xCd-ru-nO1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2H5-mY-ZCc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="01N-kS-Vx3"/>
+                <constraint firstAttribute="trailing" secondItem="2H5-mY-ZCc" secondAttribute="trailing" id="3Qp-Nw-DWC"/>
+                <constraint firstAttribute="trailing" secondItem="39K-mg-zEO" secondAttribute="trailing" id="5C8-gI-XCi"/>
+                <constraint firstAttribute="bottom" secondItem="39K-mg-zEO" secondAttribute="bottom" id="6tQ-KP-aaD"/>
+                <constraint firstAttribute="bottom" secondItem="2H5-mY-ZCc" secondAttribute="bottom" id="CxN-cl-PSz"/>
+                <constraint firstItem="hQU-rl-CbV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GsP-p7-Zqv"/>
+                <constraint firstItem="9jr-8P-7jM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="Kuf-cq-Cux"/>
+                <constraint firstAttribute="bottom" secondItem="hQU-rl-CbV" secondAttribute="bottom" id="QGj-2s-u4h"/>
+                <constraint firstItem="39K-mg-zEO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ROJ-Cl-N9K"/>
+                <constraint firstAttribute="trailing" secondItem="9jr-8P-7jM" secondAttribute="trailing" constant="80" id="Wgx-BF-e7n"/>
+                <constraint firstAttribute="trailing" secondItem="hQU-rl-CbV" secondAttribute="trailing" id="czw-ox-ZI8"/>
+                <constraint firstItem="hQU-rl-CbV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gwm-Yg-F7K"/>
+            </constraints>
+            <variation key="heightClass=compact">
+                <mask key="constraints">
+                    <exclude reference="GsP-p7-Zqv"/>
+                    <exclude reference="QGj-2s-u4h"/>
+                    <exclude reference="czw-ox-ZI8"/>
+                    <exclude reference="gwm-Yg-F7K"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="CommonBottomBarWhite" width="375" height="46"/>
+        <image name="EditorEditButton" width="44" height="44"/>
+        <image name="EditorGeniusButton" width="44" height="44"/>
+        <image name="EditorWhiteBarCancelButton" width="44" height="44"/>
+        <image name="EditorWhiteBarDoneButton" width="44" height="44"/>
+        <image name="HomeShareButton" width="44" height="44"/>
+        <image name="WorkBackground" width="375" height="667"/>
+        <image name="WorkRootShopButton" width="44" height="44"/>
+    </resources>
+</document>

@@ -1,0 +1,25 @@
+
+
+/* Class = "UILabel"; text = "Create a Page"; ObjectID = "8wz-Lr-tXZ"; */
+"8wz-Lr-tXZ.text" = "페이지 만들기";
+
+/* Class = "UILabel"; text = "Tutorial & About"; ObjectID = "Dp8-BV-y2c"; */
+"Dp8-BV-y2c.text" = "사용방법과 소개";
+
+/* Class = "UILabel"; text = "Layout Style"; ObjectID = "aW6-Fk-YTN"; */
+"aW6-Fk-YTN.text" = "레이아웃 정렬";
+
+/* Class = "UILabel"; text = "Tap to edit and \ndrag the text"; ObjectID = "bWy-ME-Akb"; */
+"bWy-ME-Akb.text" = "탭으로 편집 \n 드래그로 텍스트 이동";
+
+/* Class = "UILabel"; text = "Swipe down to go back"; ObjectID = "cbC-DJ-Co1"; */
+"cbC-DJ-Co1.text" = "아래로 당겨 뒤로 가기";
+
+/* Class = "UILabel"; text = "Choose a Layouts"; ObjectID = "dtX-de-X04"; */
+"dtX-de-X04.text" = "레이아웃 선택";
+
+/* Class = "UILabel"; text = "Pick your favorite photos (up to four)"; ObjectID = "gaa-jC-OG4"; */
+"gaa-jC-OG4.text" = "사진 선택(최대 4장)";
+
+/* Class = "UILabel"; text = "Select Album"; ObjectID = "lzX-6i-V6A"; */
+"lzX-6i-V6A.text" = "앨범 변경하기";

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextGroupEditViewController">
+            <connections>
+                <outlet property="accessoryDoneButton" destination="y0T-vl-Jol" id="t9p-uT-LUj"/>
+                <outlet property="accessoryNextButton" destination="8Sq-4a-E0n" id="8pm-yv-vNy"/>
+                <outlet property="accessoryPrevButton" destination="ERH-Rc-kQy" id="BkR-zg-VJ9"/>
+                <outlet property="accessoryView" destination="syL-qK-OxJ" id="qXx-03-WOb"/>
+                <outlet property="backgroundButton" destination="DEf-mB-DXI" id="UYJ-k7-f1K"/>
+                <outlet property="clearButton" destination="qci-iP-yIH" id="AsI-Sv-16F"/>
+                <outlet property="colorButton" destination="tTl-gl-61g" id="CLW-FD-iXP"/>
+                <outlet property="containerView" destination="WgC-jG-Iy4" id="pNv-d3-PKL"/>
+                <outlet property="contentScrollView" destination="bgU-Il-K6m" id="ZPH-iH-U7U"/>
+                <outlet property="fontButton" destination="Drp-yE-Tm9" id="fJS-Kv-2Ox"/>
+                <outlet property="uppercaseButton" destination="Tb3-wp-ZaK" id="WeQ-dO-OcQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WgC-jG-Iy4">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgU-Il-K6m">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEf-mB-DXI">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="1024"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="backgroundButtonAction:" destination="-1" eventType="touchUpInside" id="8yD-YV-GMR"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="bgU-Il-K6m" firstAttribute="top" secondItem="WgC-jG-Iy4" secondAttribute="top" id="4Bo-O9-Q6h"/>
+                        <constraint firstAttribute="bottom" secondItem="bgU-Il-K6m" secondAttribute="bottom" id="M4D-Zy-u8t"/>
+                        <constraint firstItem="bgU-Il-K6m" firstAttribute="leading" secondItem="WgC-jG-Iy4" secondAttribute="leading" id="lZr-5a-oxi"/>
+                        <constraint firstAttribute="trailing" secondItem="bgU-Il-K6m" secondAttribute="trailing" id="w4Z-vt-n1a"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qci-iP-yIH">
+                    <rect key="frame" x="553" y="10" width="37" height="37"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="I1R-lN-ldr"/>
+                        <constraint firstAttribute="width" constant="37" id="h3B-lE-qHG"/>
+                    </constraints>
+                    <state key="normal" image="TextEditClearButton">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clearButtonAction:" destination="-1" eventType="touchUpInside" id="zJW-Es-Qrx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="WgC-jG-Iy4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6Qj-2i-crY"/>
+                <constraint firstItem="qci-iP-yIH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="Guf-Y2-uRU"/>
+                <constraint firstAttribute="trailing" secondItem="WgC-jG-Iy4" secondAttribute="trailing" id="LoG-RM-hCR"/>
+                <constraint firstAttribute="bottom" secondItem="WgC-jG-Iy4" secondAttribute="bottom" id="RFM-Hr-5Md"/>
+                <constraint firstAttribute="trailing" secondItem="qci-iP-yIH" secondAttribute="trailing" constant="10" id="YoX-Uy-bmH"/>
+                <constraint firstItem="WgC-jG-Iy4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="psn-eS-QiV"/>
+            </constraints>
+        </view>
+        <view contentMode="scaleToFill" id="syL-qK-OxJ">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERH-Rc-kQy">
+                    <rect key="frame" x="5" y="0.0" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="UgZ-FC-ATO"/>
+                        <constraint firstAttribute="height" constant="44" id="khG-Fa-HLe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" image="TextEditTextPrevButton">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="accessoryButtonAction:" destination="-1" eventType="touchUpInside" id="m78-7b-NgP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Sq-4a-E0n">
+                    <rect key="frame" x="49" y="0.0" width="44" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" image="TextEditTextNextButton"/>
+                    <connections>
+                        <action selector="accessoryButtonAction:" destination="-1" eventType="touchUpInside" id="vMz-KJ-TUC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Drp-yE-Tm9">
+                    <rect key="frame" x="101" y="0.0" width="44" height="44"/>
+                    <state key="normal" image="TextEditTextFontButton">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="accessoryButtonAction:" destination="-1" eventType="touchUpInside" id="E2w-Gi-aea"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTl-gl-61g">
+                    <rect key="frame" x="160" y="0.0" width="44" height="44"/>
+                    <state key="normal" image="TextEditTextColorButton">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="accessoryButtonAction:" destination="-1" eventType="touchUpInside" id="AO2-KJ-XoE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tb3-wp-ZaK">
+                    <rect key="frame" x="218" y="0.0" width="44" height="44"/>
+                    <state key="normal" image="TextEditTextUppercaseButton">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="accessoryButtonAction:" destination="-1" eventType="touchUpInside" id="sDa-8B-Gl8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0T-vl-Jol">
+                    <rect key="frame" x="552" y="0.0" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="SZn-Z5-RNL"/>
+                        <constraint firstAttribute="height" constant="44" id="ocL-QW-y3t"/>
+                    </constraints>
+                    <state key="normal" image="TextEditDoneButton">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="accessoryButtonAction:" destination="-1" eventType="touchUpInside" id="OHu-sD-6qz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="tTl-gl-61g" firstAttribute="top" secondItem="Drp-yE-Tm9" secondAttribute="top" id="1a5-Lv-lFB"/>
+                <constraint firstItem="Drp-yE-Tm9" firstAttribute="top" secondItem="8Sq-4a-E0n" secondAttribute="top" id="D9b-QB-KsR"/>
+                <constraint firstItem="8Sq-4a-E0n" firstAttribute="leading" secondItem="ERH-Rc-kQy" secondAttribute="trailing" id="DBb-7L-mKM"/>
+                <constraint firstItem="Tb3-wp-ZaK" firstAttribute="leading" secondItem="tTl-gl-61g" secondAttribute="trailing" constant="14" id="EmJ-IS-hvD"/>
+                <constraint firstItem="tTl-gl-61g" firstAttribute="leading" secondItem="Drp-yE-Tm9" secondAttribute="trailing" constant="15" id="N5r-mA-kDM"/>
+                <constraint firstAttribute="trailing" secondItem="y0T-vl-Jol" secondAttribute="trailing" constant="4" id="aIW-6c-29D"/>
+                <constraint firstItem="ERH-Rc-kQy" firstAttribute="leading" secondItem="syL-qK-OxJ" secondAttribute="leading" constant="5" id="cck-YO-TQq"/>
+                <constraint firstItem="8Sq-4a-E0n" firstAttribute="top" secondItem="ERH-Rc-kQy" secondAttribute="top" id="fvf-5U-bpv"/>
+                <constraint firstItem="ERH-Rc-kQy" firstAttribute="top" secondItem="syL-qK-OxJ" secondAttribute="top" id="ndj-fb-Wdm"/>
+                <constraint firstItem="Drp-yE-Tm9" firstAttribute="leading" secondItem="8Sq-4a-E0n" secondAttribute="trailing" constant="8" symbolic="YES" id="vC5-y6-68b"/>
+                <constraint firstItem="y0T-vl-Jol" firstAttribute="top" secondItem="syL-qK-OxJ" secondAttribute="top" id="vPW-0h-guq"/>
+                <constraint firstItem="Tb3-wp-ZaK" firstAttribute="top" secondItem="tTl-gl-61g" secondAttribute="top" id="zzb-eY-hng"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="TextEditClearButton" width="44" height="44"/>
+        <image name="TextEditDoneButton" width="44" height="44"/>
+        <image name="TextEditTextColorButton" width="44" height="44"/>
+        <image name="TextEditTextFontButton" width="44" height="44"/>
+        <image name="TextEditTextNextButton" width="44" height="44"/>
+        <image name="TextEditTextPrevButton" width="44" height="44"/>
+        <image name="TextEditTextUppercaseButton" width="44" height="44"/>
+    </resources>
+</document>

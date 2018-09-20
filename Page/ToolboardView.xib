@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToolboardView">
+            <connections>
+                <outlet property="closeButton" destination="4QZ-Qu-6yY" id="437-Cl-tGY"/>
+                <outlet property="colorButton" destination="azT-6v-Gfa" id="Grj-dZ-hRB"/>
+                <outlet property="fontButton" destination="jFF-3I-LEd" id="Mgg-3z-a4p"/>
+                <outlet property="interfaceView" destination="iN0-l3-epB" id="z4c-dG-Z8A"/>
+                <outlet property="nextButton" destination="Scl-4i-ogm" id="dKD-kL-PgJ"/>
+                <outlet property="previousButton" destination="mkL-G9-Lkm" id="IzQ-pu-JTD"/>
+                <outlet property="uppercaseButton" destination="4Zd-7h-sdr" id="ALH-Wv-2xZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkL-G9-Lkm">
+                    <rect key="frame" x="5" y="0.0" width="44" height="44"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="K55-1P-tLv"/>
+                        <constraint firstAttribute="width" constant="44" id="fHP-02-zxl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" image="TextEditTextPrevButton">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="toolButtonAction:" destination="-1" eventType="touchUpInside" id="ej6-wc-svb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Scl-4i-ogm">
+                    <rect key="frame" x="49" y="0.0" width="44" height="44"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" image="TextEditTextNextButton"/>
+                    <connections>
+                        <action selector="toolButtonAction:" destination="-1" eventType="touchUpInside" id="wPh-wg-4aN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFF-3I-LEd">
+                    <rect key="frame" x="101" y="0.0" width="44" height="44"/>
+                    <animations/>
+                    <state key="normal" image="TextEditTextFontButton">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="toolButtonAction:" destination="-1" eventType="touchUpInside" id="tGx-vS-jjN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azT-6v-Gfa">
+                    <rect key="frame" x="160" y="0.0" width="44" height="44"/>
+                    <animations/>
+                    <state key="normal" image="TextEditTextColorButton">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="toolButtonAction:" destination="-1" eventType="touchUpInside" id="R6t-IZ-2Ts"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Zd-7h-sdr">
+                    <rect key="frame" x="218" y="0.0" width="44" height="44"/>
+                    <animations/>
+                    <state key="normal" image="TextEditTextUppercaseButton">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="toolButtonAction:" destination="-1" eventType="touchUpInside" id="OsP-nd-fNR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4QZ-Qu-6yY">
+                    <rect key="frame" x="552" y="0.0" width="44" height="44"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="1Fe-nH-BKB"/>
+                        <constraint firstAttribute="height" constant="44" id="miB-fe-dfD"/>
+                    </constraints>
+                    <state key="normal" image="TextEditDoneButton">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="closeButtonAction:" destination="-1" eventType="touchUpInside" id="iHK-DK-nDz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.054901964960000001" green="0.058823533359999999" blue="0.066666670139999995" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstItem="4Zd-7h-sdr" firstAttribute="leading" secondItem="azT-6v-Gfa" secondAttribute="trailing" constant="14" id="A9k-h6-0GQ"/>
+                <constraint firstItem="Scl-4i-ogm" firstAttribute="top" secondItem="jFF-3I-LEd" secondAttribute="top" id="Cpl-Vo-Lhu"/>
+                <constraint firstItem="azT-6v-Gfa" firstAttribute="top" secondItem="jFF-3I-LEd" secondAttribute="top" id="Dho-gY-1a5"/>
+                <constraint firstItem="mkL-G9-Lkm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PBU-xt-4bt"/>
+                <constraint firstItem="azT-6v-Gfa" firstAttribute="top" secondItem="4Zd-7h-sdr" secondAttribute="top" id="YGM-UL-PRE"/>
+                <constraint firstItem="mkL-G9-Lkm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="d7T-Hc-c5G"/>
+                <constraint firstItem="4QZ-Qu-6yY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dXI-66-tYQ"/>
+                <constraint firstItem="Scl-4i-ogm" firstAttribute="leading" secondItem="mkL-G9-Lkm" secondAttribute="trailing" id="epd-F4-E4V"/>
+                <constraint firstAttribute="trailing" secondItem="4QZ-Qu-6yY" secondAttribute="trailing" constant="4" id="hZ7-sw-0LE"/>
+                <constraint firstItem="Scl-4i-ogm" firstAttribute="top" secondItem="mkL-G9-Lkm" secondAttribute="top" id="kA7-Q4-iBf"/>
+                <constraint firstItem="azT-6v-Gfa" firstAttribute="leading" secondItem="jFF-3I-LEd" secondAttribute="trailing" constant="15" id="xwm-oO-Rus"/>
+                <constraint firstItem="jFF-3I-LEd" firstAttribute="leading" secondItem="Scl-4i-ogm" secondAttribute="trailing" constant="8" symbolic="YES" id="yWv-0c-xmF"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="TextEditDoneButton" width="44" height="44"/>
+        <image name="TextEditTextColorButton" width="44" height="44"/>
+        <image name="TextEditTextFontButton" width="44" height="44"/>
+        <image name="TextEditTextNextButton" width="44" height="44"/>
+        <image name="TextEditTextPrevButton" width="44" height="44"/>
+        <image name="TextEditTextUppercaseButton" width="44" height="44"/>
+    </resources>
+</document>

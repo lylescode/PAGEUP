@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoEditViewController">
+            <connections>
+                <outlet property="bottomCloseButton" destination="uXQ-wW-7YV" id="JKJ-yg-fs0"/>
+                <outlet property="bottomCloseView" destination="DEW-yp-kPi" id="gbC-7B-9u5"/>
+                <outlet property="bottomConfirmView" destination="QHx-8x-PEg" id="akW-DT-UqD"/>
+                <outlet property="brightnessButton" destination="Ggs-BT-w3v" id="Lv5-iH-vdK"/>
+                <outlet property="brightnessButtonRound" destination="UHi-bs-4l7" id="Qzl-av-rp2"/>
+                <outlet property="brightnessSlider" destination="ruh-PU-QtD" id="5cd-a5-4NO"/>
+                <outlet property="containerView" destination="sp0-dt-4Ij" id="gD3-C9-dR3"/>
+                <outlet property="importButton" destination="v7o-my-wdx" id="wTr-gs-FTR"/>
+                <outlet property="importButtonRound" destination="Cw4-Zw-urv" id="A0u-1i-GoU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QHx-8x-PEg">
+                    <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ppB-eH-9ht">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aY0-Ni-Fpo">
+                            <rect key="frame" x="300" y="0.0" width="300" height="44"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeN-OF-GUx">
+                            <rect key="frame" x="128" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="gXf-Mc-YTG"/>
+                                <constraint firstAttribute="height" constant="44" id="jvG-Op-TUc"/>
+                            </constraints>
+                            <state key="normal" image="WorkRootCancelButton">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vvx-95-vVF">
+                            <rect key="frame" x="428" y="0.0" width="44" height="44"/>
+                            <state key="normal" image="WorkRootConfirmButton">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="7t6-Xp-oqC"/>
+                        <constraint firstItem="ppB-eH-9ht" firstAttribute="height" secondItem="QHx-8x-PEg" secondAttribute="height" id="Fnt-2G-6jd"/>
+                        <constraint firstItem="aeN-OF-GUx" firstAttribute="centerY" secondItem="ppB-eH-9ht" secondAttribute="centerY" id="GR2-nB-KdD"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="WWy-ep-CSG"/>
+                        <constraint firstItem="ppB-eH-9ht" firstAttribute="width" secondItem="QHx-8x-PEg" secondAttribute="width" multiplier="1:2" id="WXz-tE-NMH"/>
+                        <constraint firstItem="ppB-eH-9ht" firstAttribute="top" secondItem="QHx-8x-PEg" secondAttribute="top" id="XVJ-iK-voI"/>
+                        <constraint firstItem="aeN-OF-GUx" firstAttribute="centerX" secondItem="ppB-eH-9ht" secondAttribute="centerX" id="eHw-mT-h7e"/>
+                        <constraint firstItem="Vvx-95-vVF" firstAttribute="centerY" secondItem="aY0-Ni-Fpo" secondAttribute="centerY" id="gtf-mF-X00"/>
+                        <constraint firstItem="aY0-Ni-Fpo" firstAttribute="height" secondItem="QHx-8x-PEg" secondAttribute="height" id="hE3-xx-Iis"/>
+                        <constraint firstItem="aY0-Ni-Fpo" firstAttribute="width" secondItem="QHx-8x-PEg" secondAttribute="width" multiplier="1:2" id="i5b-jb-BRS"/>
+                        <constraint firstItem="aY0-Ni-Fpo" firstAttribute="top" secondItem="QHx-8x-PEg" secondAttribute="top" id="q8K-Zu-M5t"/>
+                        <constraint firstItem="Vvx-95-vVF" firstAttribute="centerX" secondItem="aY0-Ni-Fpo" secondAttribute="centerX" id="s5Z-cn-gdb"/>
+                        <constraint firstItem="ppB-eH-9ht" firstAttribute="leading" secondItem="QHx-8x-PEg" secondAttribute="leading" id="x9E-hc-SRx"/>
+                        <constraint firstAttribute="trailing" secondItem="aY0-Ni-Fpo" secondAttribute="trailing" id="zV8-et-7P6"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DEW-yp-kPi">
+                    <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gfi-1L-753">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXQ-wW-7YV">
+                            <rect key="frame" x="278" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="a8s-tP-R5d"/>
+                                <constraint firstAttribute="width" constant="44" id="xYo-gS-XD8"/>
+                            </constraints>
+                            <state key="normal" image="WorkRootCancelButton">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="bottomCloseButtonAction:" destination="-1" eventType="touchUpInside" id="Ixy-Jt-vRs"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Gfi-1L-753" firstAttribute="top" secondItem="DEW-yp-kPi" secondAttribute="top" id="Acz-2J-BsW"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="EDl-Lr-Gtq"/>
+                        <constraint firstItem="Gfi-1L-753" firstAttribute="width" secondItem="DEW-yp-kPi" secondAttribute="width" id="Ex3-sQ-Enu"/>
+                        <constraint firstAttribute="height" constant="44" id="Jay-jU-9X2"/>
+                        <constraint firstItem="uXQ-wW-7YV" firstAttribute="centerX" secondItem="Gfi-1L-753" secondAttribute="centerX" id="Yyz-pV-KlM"/>
+                        <constraint firstItem="Gfi-1L-753" firstAttribute="height" secondItem="DEW-yp-kPi" secondAttribute="height" id="gZv-JK-RJj"/>
+                        <constraint firstItem="uXQ-wW-7YV" firstAttribute="centerY" secondItem="Gfi-1L-753" secondAttribute="centerY" id="h3c-3n-ZAp"/>
+                        <constraint firstItem="Gfi-1L-753" firstAttribute="leading" secondItem="DEW-yp-kPi" secondAttribute="leading" id="oUh-Eu-nKf"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="44" id="xLx-lO-j6n"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sp0-dt-4Ij">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UHi-bs-4l7">
+                            <rect key="frame" x="222" y="523" width="46" height="46"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggs-BT-w3v">
+                                    <rect key="frame" x="1" y="1" width="44" height="44"/>
+                                    <state key="normal" image="PhotoEditBrightnessButton">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="brightnessButtonAction:" destination="-1" eventType="touchUpInside" id="KkU-6m-qXA"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="centerY" secondItem="Ggs-BT-w3v" secondAttribute="centerY" id="68n-ZG-zKE"/>
+                                <constraint firstAttribute="width" constant="46" id="6Mu-uZ-CeD"/>
+                                <constraint firstAttribute="centerX" secondItem="Ggs-BT-w3v" secondAttribute="centerX" id="Hi3-Dg-WIP"/>
+                                <constraint firstAttribute="height" constant="46" id="Ho3-0Z-8n9"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cw4-Zw-urv">
+                            <rect key="frame" x="332" y="523" width="46" height="46"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7o-my-wdx">
+                                    <rect key="frame" x="1" y="1" width="44" height="44"/>
+                                    <state key="normal" image="PhotoEditImportButton">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="importButtonAction:" destination="-1" eventType="touchUpInside" id="91m-WK-XAo"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="46" id="AV0-FR-ztk"/>
+                                <constraint firstAttribute="centerX" secondItem="v7o-my-wdx" secondAttribute="centerX" id="F1K-lh-rX1"/>
+                                <constraint firstAttribute="centerY" secondItem="v7o-my-wdx" secondAttribute="centerY" id="Hby-a9-l7K"/>
+                                <constraint firstAttribute="height" constant="46" id="YZd-bT-UWc"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="centerX" secondItem="Cw4-Zw-urv" secondAttribute="centerX" constant="-55" id="GFW-ac-pbb"/>
+                        <constraint firstAttribute="centerX" secondItem="UHi-bs-4l7" secondAttribute="centerX" constant="55" id="VYI-j6-OIF"/>
+                        <constraint firstAttribute="bottom" secondItem="Cw4-Zw-urv" secondAttribute="bottom" constant="31" id="d7f-Te-OlE"/>
+                        <constraint firstAttribute="bottom" secondItem="UHi-bs-4l7" secondAttribute="bottom" constant="31" id="wJe-bq-YaP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="sp0-dt-4Ij" secondAttribute="trailing" id="9ND-gy-hJF"/>
+                <constraint firstAttribute="bottom" secondItem="DEW-yp-kPi" secondAttribute="bottom" id="Bdu-6g-tRY"/>
+                <constraint firstAttribute="trailing" secondItem="DEW-yp-kPi" secondAttribute="trailing" id="FSA-z7-El9"/>
+                <constraint firstItem="sp0-dt-4Ij" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Lzq-CL-D3U"/>
+                <constraint firstAttribute="bottom" secondItem="sp0-dt-4Ij" secondAttribute="bottom" id="NHT-F2-SFZ"/>
+                <constraint firstItem="DEW-yp-kPi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SO3-qM-uFD"/>
+                <constraint firstItem="sp0-dt-4Ij" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ti1-It-J3R"/>
+                <constraint firstAttribute="bottom" secondItem="sp0-dt-4Ij" secondAttribute="bottom" id="WKG-b6-dH2"/>
+                <constraint firstItem="QHx-8x-PEg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WVh-NC-Ccl"/>
+                <constraint firstAttribute="trailing" secondItem="QHx-8x-PEg" secondAttribute="trailing" id="ZRa-le-PDb"/>
+                <constraint firstAttribute="trailing" secondItem="sp0-dt-4Ij" secondAttribute="trailing" id="mA7-j4-FLP"/>
+                <constraint firstAttribute="bottom" secondItem="QHx-8x-PEg" secondAttribute="bottom" id="mj6-o6-Sdf"/>
+                <constraint firstItem="sp0-dt-4Ij" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nZV-AH-NdP"/>
+                <constraint firstItem="sp0-dt-4Ij" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="u6P-aa-dwb"/>
+            </constraints>
+        </view>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="ruh-PU-QtD" customClass="PhotoBrightnessSliderView">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="314" y="923.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="PhotoEditBrightnessButton" width="44" height="44"/>
+        <image name="PhotoEditImportButton" width="44" height="44"/>
+        <image name="WorkRootCancelButton" width="44" height="44"/>
+        <image name="WorkRootConfirmButton" width="44" height="44"/>
+    </resources>
+</document>

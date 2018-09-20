@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AllPhotosViewController">
+            <connections>
+                <outlet property="collectionView" destination="oH1-4Q-Z1M" id="ypK-gQ-sgB"/>
+                <outlet property="collectionViewLayout" destination="kEu-ZJ-MXd" id="b22-v8-hg5"/>
+                <outlet property="topButton" destination="S9i-8t-3dO" id="6mG-Yc-wyd"/>
+                <outlet property="topTitleLabel" destination="DR7-jr-Br8" id="AGt-Ro-bpD"/>
+                <outlet property="topView" destination="g1n-Z0-Rg9" id="P56-Wy-oLQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="oH1-4Q-Z1M">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="2" id="kEu-ZJ-MXd">
+                        <size key="itemSize" width="80" height="80"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="iEn-f2-EMu"/>
+                        <outlet property="delegate" destination="-1" id="nvF-BF-Tuq"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g1n-Z0-Rg9">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9i-8t-3dO">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="Op6-Ks-H4Z"/>
+                                <constraint firstAttribute="width" constant="600" id="iFN-dl-prx"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="CommonTopBarWhite"/>
+                            <connections>
+                                <action selector="topButtonAction:" destination="-1" eventType="touchUpInside" id="5mI-q2-voM"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Photos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DR7-jr-Br8">
+                            <rect key="frame" x="15" y="19" width="242" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="242" id="4CC-Pk-hlq"/>
+                                <constraint firstAttribute="height" constant="18" id="qnt-Q5-Fxf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                            <color key="textColor" red="0.23529411764705882" green="0.4823529411764706" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbumBarArrowIcon" translatesAutoresizingMaskIntoConstraints="NO" id="MNR-SF-NAr">
+                            <rect key="frame" x="573" y="25" width="12" height="7"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="12" id="GxI-JF-jBU"/>
+                                <constraint firstAttribute="height" constant="7" id="UTd-KA-u69"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="MNR-SF-NAr" firstAttribute="top" secondItem="g1n-Z0-Rg9" secondAttribute="top" constant="25" id="0dh-qw-DZr"/>
+                        <constraint firstAttribute="height" constant="55" id="4bd-S0-R1s"/>
+                        <constraint firstAttribute="trailing" secondItem="MNR-SF-NAr" secondAttribute="trailing" constant="15" id="6ef-eA-Hk8"/>
+                        <constraint firstItem="DR7-jr-Br8" firstAttribute="leading" secondItem="g1n-Z0-Rg9" secondAttribute="leading" constant="15" id="DM8-Zw-ryv"/>
+                        <constraint firstItem="S9i-8t-3dO" firstAttribute="top" secondItem="g1n-Z0-Rg9" secondAttribute="top" id="TbA-G1-Fqj"/>
+                        <constraint firstItem="S9i-8t-3dO" firstAttribute="leading" secondItem="g1n-Z0-Rg9" secondAttribute="leading" id="iev-54-e0Q"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="wHC-ZG-a9L"/>
+                        <constraint firstItem="DR7-jr-Br8" firstAttribute="top" secondItem="g1n-Z0-Rg9" secondAttribute="top" constant="19" id="zIT-oD-40f"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="g1n-Z0-Rg9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EKI-dG-jft"/>
+                <constraint firstItem="oH1-4Q-Z1M" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JUS-qp-VqK"/>
+                <constraint firstItem="oH1-4Q-Z1M" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="PAL-AM-hdd"/>
+                <constraint firstAttribute="bottom" secondItem="oH1-4Q-Z1M" secondAttribute="bottom" id="bfE-RS-yDD"/>
+                <constraint firstItem="g1n-Z0-Rg9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hg8-4m-41S"/>
+                <constraint firstAttribute="trailing" secondItem="g1n-Z0-Rg9" secondAttribute="trailing" id="j7e-h6-rY9"/>
+                <constraint firstAttribute="trailing" secondItem="oH1-4Q-Z1M" secondAttribute="trailing" id="jEN-Zx-vkw"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="AlbumBarArrowIcon" width="12" height="7"/>
+        <image name="CommonTopBarWhite" width="375" height="55"/>
+    </resources>
+</document>

@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  Page
+
+  Created by CMR on 8/10/15.
+  Copyright (c) 2015 Page. All rights reserved.
+*/
+
+"All Photos"        = "全て画像";
+
+"TemplateSortAll"           = "全体をみる";
+"TemplateSortLandscape"     = "横向き";
+"TemplateSortSquare"        = "正方形";
+"TemplateSortPortrait"      = "縦向き";
+
+"Share Photo"       = "画像共有";
+"Share Video"       = "動画共有";
+"Share PDF"         = "PDF共有";
+
+"ABOUT"             = "アプリについて";
+"TUTORIAL TIPS"     = "チュートリアル & ヒント";
+
+"Gallery"           = "ギャラリー";
+"Select Photos"     = "画像選択";
+"Select Layout"     = "レイアウト選択";
+"Edit Page"         = "編集";
+
+"About Description" = "簡単で楽しくデザインした\nあなたの写真と話しを友達に\n様々な方法で共有して見ませんか？";
+
+"Gallery Description"           = "作成したページを一目で見れるギャラリー画面です。簡単に新規作成、コピー、削除、\n共有が出来ます。";
+
+"Select Photos Description"     = "好きな画像を1〜4枚まで選んでください。選んだ写真に合わせてレイアウトを提供します。";
+
+"Select Layout Description"     = "好きなデザインレイアウトを選んでください。\n横向き、縦向き、正方形そしてサイズ別の選択も可能です。";
+
+"Edit Page Description"         = "好きなフォント、カラー、画像加工、画像交替など簡単で素早く編集する事が出来ます。";
+
+"WATCH THE VIDEO"   = "動画を見る";
+
+
+"RATE PAGE UP"          = "PAGE UP 評価する";
+"RECOMMEND PAGE UP"     = "PAGE UP おすすめする";
+"FEEDBACK"              = "PAGE UP ご意見を送る";
+
+
+"Delete Message"    = "ページを削除しますか？";
+"Yes"               = "はい";
+"No"                = "いいえ";

@@ -1,0 +1,5 @@
+#define TOOLTIP_HOME_KEY    @"HomeToolTip"
+#define TOOLTIP_PHOTOS_KEY  @"PhotosToolTip"
+#define TOOLTIP_LAYOUTS_KEY @"LayoutsToolTip"
+#define TOOLTIP_EDIT_KEY    @"EditToolTip"
+#define TOOLTIP_TEMPLATEEDIT_KEY    @"TemplateEditToolTip"
